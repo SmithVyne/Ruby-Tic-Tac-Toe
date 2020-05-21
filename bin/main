@@ -1,2 +1,21 @@
 #!/usr/bin/env ruby
-puts "Hello World!"
+puts "Welcome to Tic Tac Toe"
+puts "You should pick positions in turns"
+puts "-----------------"
+puts "Player 1's move:"
+user_input = gets.chomp
+puts "Here is your move"
+
+puts "Player 2's move:"
+user_input = gets.chomp
+puts "Here is your move"
+
+puts "Player 1's move:"
+user_input = gets.chomp
+puts "Here is your move"
+
+puts "Player 2's move:"
+user_input = gets.chomp
+puts "Here is your move"
+
+puts "The winner is Player ..."
