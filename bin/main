@@ -1,9 +1,16 @@
 #!/usr/bin/env ruby
 
 # Do not Edit above this line ----------------------------------------------- Start Below
-
 moves = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-puts "Choose your move position on the board with one of these numbers: "
+
+puts "Welcome to 2020 version of popular X-O Game!"
+puts "Let's Play!"
+puts " "
+
+
+puts " "
+puts "--------------------------------------------------"
+puts "Player 1: X"
 puts " "
 puts "#{moves[0]} | #{moves[1]} | #{moves[2]}"
 puts "----------"
@@ -11,3 +18,150 @@ puts "#{moves[3]} | #{moves[4]} | #{moves[5]}"
 puts "----------"
 puts "#{moves[6]} | #{moves[7]} | #{moves[8]}"
 puts " "
+print "Choose your position from available numbers: "
+player_input = gets.chomp
+puts player_input
+player_input = player_input.to_i - 1
+moves[player_input] = "X"
+
+puts " "
+puts "--------------------------------------------------"
+puts "Player 2: O"
+puts " "
+puts "#{moves[0]} | #{moves[1]} | #{moves[2]}"
+puts "----------"
+puts "#{moves[3]} | #{moves[4]} | #{moves[5]}"
+puts "----------"
+puts "#{moves[6]} | #{moves[7]} | #{moves[8]}"
+puts " "
+print "Choose your position from available numbers: "
+player_input = gets.chomp
+puts player_input
+player_input = player_input.to_i - 1
+moves[player_input] = "O"
+
+puts " "
+puts "--------------------------------------------------"
+puts "Player 1: X"
+puts " "
+puts "#{moves[0]} | #{moves[1]} | #{moves[2]}"
+puts "----------"
+puts "#{moves[3]} | #{moves[4]} | #{moves[5]}"
+puts "----------"
+puts "#{moves[6]} | #{moves[7]} | #{moves[8]}"
+puts " "
+print "Choose your position from available numbers: "
+player_input = gets.chomp
+puts player_input
+player_input = player_input.to_i - 1
+moves[player_input] = "X"
+
+puts " "
+puts "--------------------------------------------------"
+puts "Player 2: O"
+puts " "
+puts "#{moves[0]} | #{moves[1]} | #{moves[2]}"
+puts "----------"
+puts "#{moves[3]} | #{moves[4]} | #{moves[5]}"
+puts "----------"
+puts "#{moves[6]} | #{moves[7]} | #{moves[8]}"
+puts " "
+print "Choose your position from available numbers: "
+player_input = gets.chomp
+puts player_input
+player_input = player_input.to_i - 1
+moves[player_input] = "O"
+
+puts " "
+puts "--------------------------------------------------"
+puts "Player 1: X"
+puts " "
+puts "#{moves[0]} | #{moves[1]} | #{moves[2]}"
+puts "----------"
+puts "#{moves[3]} | #{moves[4]} | #{moves[5]}"
+puts "----------"
+puts "#{moves[6]} | #{moves[7]} | #{moves[8]}"
+puts " "
+print "Choose your position from available numbers: "
+player_input = gets.chomp
+puts player_input
+player_input = player_input.to_i - 1
+moves[player_input] = "X"
+
+puts " "
+puts "--------------------------------------------------"
+puts "Player 2: O"
+puts " "
+puts "#{moves[0]} | #{moves[1]} | #{moves[2]}"
+puts "----------"
+puts "#{moves[3]} | #{moves[4]} | #{moves[5]}"
+puts "----------"
+puts "#{moves[6]} | #{moves[7]} | #{moves[8]}"
+puts " "
+print "Choose your position from available numbers: "
+player_input = gets.chomp
+puts player_input
+player_input = player_input.to_i - 1
+moves[player_input] = "O"
+
+puts " "
+puts "--------------------------------------------------"
+puts "Player 1: X"
+puts " "
+puts "#{moves[0]} | #{moves[1]} | #{moves[2]}"
+puts "----------"
+puts "#{moves[3]} | #{moves[4]} | #{moves[5]}"
+puts "----------"
+puts "#{moves[6]} | #{moves[7]} | #{moves[8]}"
+puts " "
+print "Choose your position from available numbers: "
+player_input = gets.chomp
+puts player_input
+player_input = player_input.to_i - 1
+moves[player_input] = "X"
+
+puts " "
+puts "--------------------------------------------------"
+puts "Player 2: O"
+puts " "
+puts "#{moves[0]} | #{moves[1]} | #{moves[2]}"
+puts "----------"
+puts "#{moves[3]} | #{moves[4]} | #{moves[5]}"
+puts "----------"
+puts "#{moves[6]} | #{moves[7]} | #{moves[8]}"
+puts " "
+print "Choose your position from available numbers: "
+player_input = gets.chomp
+puts player_input
+player_input = player_input.to_i - 1
+moves[player_input] = "O"
+
+puts " "
+puts "--------------------------------------------------"
+puts "Player 1: X"
+puts " "
+puts "#{moves[0]} | #{moves[1]} | #{moves[2]}"
+puts "----------"
+puts "#{moves[3]} | #{moves[4]} | #{moves[5]}"
+puts "----------"
+puts "#{moves[6]} | #{moves[7]} | #{moves[8]}"
+puts " "
+print "Choose your position from available numbers: "
+player_input = gets.chomp
+puts player_input
+player_input = player_input.to_i - 1
+moves[player_input] = "X"
+
+puts " "
+puts "--------------------------------------------------"
+puts "Final Result"
+puts "#{moves[0]} | #{moves[1]} | #{moves[2]}"
+puts "----------"
+puts "#{moves[3]} | #{moves[4]} | #{moves[5]}"
+puts "----------"
+puts "#{moves[6]} | #{moves[7]} | #{moves[8]}"
+puts " "
+
+puts "The score is:"
+puts "Player 1 [1]"
+puts "Player 2 [0]"
