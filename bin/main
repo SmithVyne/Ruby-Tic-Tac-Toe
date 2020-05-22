@@ -2,8 +2,16 @@
 
 # Do not Edit above this line ----------------------------------------------- Start Below
 
+
+puts "Welcome to 2020 version of popular X-O Game!"
+puts "Let's Play!"
+puts " "
+puts "Player 1: X"
+
+
+
 moves = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-puts "Choose your move position on the board with one of these numbers: "
+# puts "Choose your move position on the board with one of these numbers: "
 puts " "
 puts "#{moves[0]} | #{moves[1]} | #{moves[2]}"
 puts "----------"
@@ -11,3 +19,77 @@ puts "#{moves[3]} | #{moves[4]} | #{moves[5]}"
 puts "----------"
 puts "#{moves[6]} | #{moves[7]} | #{moves[8]}"
 puts " "
+print "Choose your position from available numbers: "
+
+player_input = gets.chomp
+
+puts player_input
+
+player_input = player_input.to_i-1
+
+moves[player_input] = "X"
+
+puts " "
+puts "Player 2: O"
+
+puts " "
+puts "#{moves[0]} | #{moves[1]} | #{moves[2]}"
+puts "----------"
+puts "#{moves[3]} | #{moves[4]} | #{moves[5]}"
+puts "----------"
+puts "#{moves[6]} | #{moves[7]} | #{moves[8]}"
+puts " "
+
+print "Choose your position from available numbers: "
+
+player_input = gets.chomp
+
+if !player_input.is_a?(Integer)
+  puts " Error "
+
+puts player_input
+
+player_input = player_input.to_i-1
+
+moves[player_input] = "O"
+
+puts " "
+puts "Player 1: X"
+
+puts " "
+puts "#{moves[0]} | #{moves[1]} | #{moves[2]}"
+puts "----------"
+puts "#{moves[3]} | #{moves[4]} | #{moves[5]}"
+puts "----------"
+puts "#{moves[6]} | #{moves[7]} | #{moves[8]}"
+puts " "
+
+
+
+
+
+
+# case winner
+# when moves[0] == moves[1] && moves[0] == moves[2]
+#   "play 1 is the winner"
+# when moves[3] == moves[4] && moves[3] == moves[5]
+#   true
+# when moves[7] == moves[8] && moves[7] == moves[9]
+#   true
+  
+# when moves[0] == moves[3] && moves[0] == moves[7]
+#   true
+# when moves[1] == moves[4] && moves[1] == moves[8]
+#   true
+# when moves[2] == moves[5] && moves[2] == moves[9]
+#   true
+
+# when moves[0] == moves[4] && moves[0] == moves[9]
+#   true
+# when moves[2] == moves[4] && moves[2] == moves[7]
+#   true
+# else
+#   false
+# end
+
+
