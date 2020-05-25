@@ -81,4 +81,4 @@ if filled.count == 9
   puts "**********************"
   board(moves)
 end
-# rubocop:disable Style/StringLiterals, Metrics/LineLength, Style/WordArray, Lint/UnneededDisable, Lint/RedundantCopDisableDirective, Naming/MethodParameterName
+# rubocop:enable Style/StringLiterals, Metrics/LineLength, Style/WordArray, Lint/UnneededDisable, Lint/RedundantCopDisableDirective, Naming/MethodParameterName
