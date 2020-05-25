@@ -3,7 +3,7 @@
 # Do not Edit above this line ----------------------------------------------- Start Below
 game_on = true
 
-# rubocop:disable Style/StringLiterals, Metrics/LineLength, Style/WordArray, Lint/UnneededDisable
+# rubocop:disable Style/StringLiterals, Metrics/LineLength, Style/WordArray, Lint/UnneededDisable, Lint/RedundantCopDisableDirective, Naming/MethodParameterName
 players = ["Player_1", "Player_2"]
 players_mark = ["X", "O"]
 players_moves = [[], []]
@@ -81,4 +81,4 @@ if filled.count == 9
   puts "**********************"
   board(moves)
 end
-# rubocop:enable Style/StringLiterals, Metrics/LineLength, Style/WordArray, Lint/UnneededDisable
+# rubocop:disable Style/StringLiterals, Metrics/LineLength, Style/WordArray, Lint/UnneededDisable, Lint/RedundantCopDisableDirective, Naming/MethodParameterName
