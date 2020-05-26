@@ -1,3 +1,4 @@
+# rubocop:disable Style/StringLiterals
 class Board
   def initialize(moves)
     puts " "
@@ -9,3 +10,4 @@ class Board
     puts " "
   end
 end
+# rubocop:enable Style/StringLiterals
