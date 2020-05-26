@@ -1,4 +1,3 @@
-
 class Game
   include Gameprops
   attr_accessor :game_on, :players_moves, :moves, :filled
