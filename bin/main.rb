@@ -3,6 +3,8 @@
 # Do not Edit above this line ----------------------------------------------- Start Below
 # rubocop:disable Style/StringLiterals, Metrics/LineLength, Style/WordArray, Lint/UnneededDisable, Lint/RedundantCopDisableDirective, Naming/MethodParameterName, Metrics/AbcSize, Metrics/PerceivedComplexity, Metrics/MethodLength, Metrics/CyclomaticComplexity, Style/Documentation
 
+require_relative "../lib/board.rb"
+
 module Gameprops
   def has_won?(x) # rubocop:disable Naming/PredicateName
     win = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
@@ -11,18 +13,6 @@ module Gameprops
         x.any?(element)
       end
     end
-  end
-end
-
-class Board
-  def initialize(moves)
-    puts " "
-    puts "#{moves[0]} | #{moves[1]} | #{moves[2]}"
-    puts "----------"
-    puts "#{moves[3]} | #{moves[4]} | #{moves[5]}"
-    puts "----------"
-    puts "#{moves[6]} | #{moves[7]} | #{moves[8]}"
-    puts " "
   end
 end
 
