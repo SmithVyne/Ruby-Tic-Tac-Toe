@@ -22,12 +22,12 @@ class Game
       player_input = input
       self.game_on = false if player_input == 'exit'
       var = check_input(player_input, moves, current_player_mark, players_moves, filled, i)
-      if has_won?(players_moves[i])
+      if won?(players_moves[i])
         self.game_on = false
-        is_winner(current_player, players, moves, i)
-      elsif filled.count == 9 && !has_won?(players_moves[i])
+        winner?(current_player, players, moves, i)
+      elsif filled.count == 9 && !won?(players_moves[i])
         self.game_on = false
-        is_draw(moves)
+        draw?(moves)
       end
       i = 1 - i if var
     end
